@@ -17,7 +17,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       # カタログが JSON として読めること
       - run: jq empty .claude-plugin/marketplace.json
       # README の表と marketplace.json の plugins が食い違っていないこと
