@@ -13,7 +13,7 @@
 ## 変更を始める
 
 1. `feat/export-csv`のような`<種別>/<内容>`の名前で、作業用のブランチを作ります。
-2. [README.md](README.md)の手順で、手元のClaude Codeにカタログを登録して確かめます（`/plugin marketplace add ./`）。
+2. [README.md](README.md)の手順で、`/plugin marketplace add ./`で手元のClaude Codeにカタログを登録して、確かめます。
 3. 一つのプルリクエストには、一つの目的の変更だけを入れます。
 
 ## プルリクエストを出す前に
