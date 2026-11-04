@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# ワークフローの権限は、コードを読むことだけにする（リポジトリの既定が変わっても広がらないように）
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      # カタログが JSON として読めること
+      - run: jq empty .claude-plugin/marketplace.json
+      # README の表と marketplace.json の plugins が食い違っていないこと
+      - run: |
+          for name in $(jq -r '.plugins[].name' .claude-plugin/marketplace.json); do
+            grep -q "\[$name\](" README.md || { echo "README.md に $name がない"; exit 1; }
+          done
