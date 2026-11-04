@@ -49,7 +49,7 @@
 
 | スキル | 内容 |
 | --- | --- |
-| [repo-kit](https://github.com/knk1313/repo-kit) | リポジトリの土台になるファイルを足す`setup`と、公開前の点検・検査・GitHubの設定を進める`publish` |
+| [repo-kit](https://github.com/knk1313/repo-kit) | リポジトリの土台を足す`setup`、公開前に整える`publish`、開発中の品質と安全性を読み取りだけで診断する`health-check`と観点ごとのレビュー（セキュリティ、バグ、設計、テスト、性能、UX、依存、ドキュメント、負債、アクセシビリティ、運用） |
 
 ## スキルを足すとき
 
