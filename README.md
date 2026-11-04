@@ -19,6 +19,7 @@
 
 ```text
 /plugin install paper-analysis@knk1313-skills
+/plugin install quick-research@knk1313-skills
 /plugin install docs-rules@knk1313-skills
 /plugin install repo-kit@knk1313-skills
 ```
@@ -36,6 +37,7 @@
 | スキル | 内容 |
 | --- | --- |
 | [paper-analysis](https://github.com/knk1313/paper-analysis) | 論文1本を、本文に書かれた事実だけを根拠に読み解き、日本語のレポート（HTML）にまとめる。PDF、arXivのURLやID、DOIを渡して使う |
+| [quick-research](https://github.com/knk1313/quick-research) | 「〇〇ってなんだっけ」のような軽い知識の質問に、事実で書いた一言、要点、例、出典の形で答える。数字・年・固有名詞は出典の本文と照合してから返す |
 
 ### 日常系
 
