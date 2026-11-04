@@ -3,7 +3,7 @@
   "owner": {
     "name": "Yuta Kondo"
   },
-  "description": "Yuta Kondo が作った Claude Code のスキルを、まとめて探して入れるためのカタログ",
+  "description": "自作の Claude Code のスキルを、まとめて探して入れるためのカタログ",
   "plugins": [
     {
       "name": "paper-analysis",
